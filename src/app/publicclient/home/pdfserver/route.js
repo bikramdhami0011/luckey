@@ -15,9 +15,9 @@ export async function POST(req){
 
  const buffer=Buffer.from(bytedata);
 
- const path=`./public/${getdata.name}`
-await writeFileSync(path,buffer);
-await PublicCondb;
+//  const path=`./public/${getdata.name}`
+// await writeFileSync(path,buffer);
+// await PublicCondb;
 const dbset= await PublicPDfmodel();
 const setpdf= await new  dbset({
     data:buffer,
