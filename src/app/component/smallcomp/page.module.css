@@ -1,0 +1,31 @@
+.cenword{
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btndiv{
+    margin-top: 30vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.btndiv2{
+    display: flex;
+    gap: 6vw;
+    text-decoration: none;
+    
+
+
+}
+.gradientButton{
+    text-decoration: none;
+    color:white;
+}
+.gradientButton:hover{
+ background-color: rgb(63, 59, 59);
+ border-radius: 8px;
+}

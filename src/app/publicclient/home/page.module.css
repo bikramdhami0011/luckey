@@ -1,0 +1,94 @@
+.pbfooter{
+    display: flex;
+    margin-top:100vh;
+    justify-content: center;
+}/* styles/Home.module.css */
+
+/* Hero Section */
+.hero {
+    background-color: #3498db;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    background-color: #fff;
+    color: #3498db;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Featured Notes Section */
+  .featuredNotes {
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  /* How It Works Section */
+  .howItWorks {
+    background-color: #f1f1f1;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+
+  /*  here is a content of pdnote  */
+  /* styles/Grid.module.css */
+
+  .contentAboveGrid{
+    justify-content: center;
+    text-align: center;
+  }
+  .donateimage{
+   display: flex;
+   flex-direction: column;
+   justify-items: center;
+   justify-content: center;
+   text-align: center;
+  }
+  .homebody{
+    background-image: url("../../../../public/photos/donatebox.jpg");
+    background-attachment: fixed;
+  }
+  .donatenotebody{
+    background-image: url("../../../../public/photos/donatenotebody.jpg");
+    background-attachment: fixed;
+    object-fit:fill;
+   
+    overflow: hidden;
+   
+   
+  }

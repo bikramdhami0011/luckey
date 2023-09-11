@@ -1,0 +1,26 @@
+.box{
+  margin-top: 100px;
+  border-radius: 4px;
+  display: grid;
+  row-gap: 6%;
+  grid-template-columns: auto auto  auto;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+   column-gap: 8%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.inbox{
+  margin-top: 5px;
+  margin: 40px;
+  padding: 60px;
+  
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+.contentAboveGrid{
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
