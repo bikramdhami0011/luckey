@@ -1,4 +1,5 @@
 import Footer from "./pricomponent/othercomp/Footer";
+import styles from "@/app/privatenote/prihome/page.module.css"
 import PrivateNavbar from "./pricomponent/othercomp/Navbar";
 
 export default function PrivateLayout({children}){
@@ -7,8 +8,8 @@ export default function PrivateLayout({children}){
     <PrivateNavbar></PrivateNavbar>
     </header> 
        {children}
-       <footer>
-             <Footer></Footer>
+       <footer className={styles.pbfooter} >
+             <Footer ></Footer>
        </footer>
     </div>
 }

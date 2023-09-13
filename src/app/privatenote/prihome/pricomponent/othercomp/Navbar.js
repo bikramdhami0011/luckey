@@ -15,9 +15,7 @@ const PrivateNavbar = () => {
                      <li onClick={()=>{
                       router.push("../../../privatenote/prihome/notes")
                     }} style={{cursor:"pointer",backgroundColor:"green" }}>Notes</li>  
-                    <li onClick={()=>{
-                      router.push("../../../../privatenote/prihome/notes/notedetail")
-                    }} style={{cursor:"pointer",backgroundColor:"green" }}>Note Details</li>  
+   
                     <li onClick={()=>{
                       router.push("../../../privatenote/prihome/extra")
                     }} style={{cursor:"pointer",backgroundColor:"green" }}>Extra</li>  

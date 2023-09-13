@@ -1,71 +1,21 @@
 /* page.module.css */
-.homecontainer {
+
+  .pbfooter{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top:100vh;
     justify-content: center;
-    padding: 20px;
-  }
+}/* styles/Home.module.css */
+/* YourComponent.module.css */
+
+.hidefile{
+  display: flex;
+  flex-direction: row-reverse;
+flex-flow: column;
+height: 400px;
+width: 250px;
+justify-content: center;
+text-align: center;
+justify-items: center;
+
   
-  .dandimg {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .homedetail {
-    flex: 1;
-    padding: 20px;
-    border-right: 1px solid #ddd;
-  }
-  
-  .homedetail h1 {
-    font-size: 24px;
-    color: #333;
-  }
-  
-  .homedetail p {
-    font-size: 16px;
-    color: #555;
-    margin: 5px 0;
-  }
-  
-  .imagecontainer {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .setimage {
-    position: relative;
-    overflow: hidden;
-  }
-  
- 
-  
-  .addphoto {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    color: #333;
-    background-color: #fff;
-    border-radius: 50%;
-    padding: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  .addphoto:hover {
-    background-color: #ddd;
-    transform: scale(1.1);
-  }
-  
-  .dialyroutine {
-    margin-top: 20px;
-  }
-  
+}
