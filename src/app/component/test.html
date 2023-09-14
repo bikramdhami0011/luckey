@@ -1,22 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .box {
-            height: 400px;
-            width: 400px;
-            background-color: blueviolet;
-  
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .makediv{
+     
+      height: 200px;
+      width: 250px;
+      position: absolute;
+      overflow: hidden;
+    }
+    .makediv img{
+      overflow: hidden;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      transform: translateY(100%);
+     
+    }
+  </style>
 </head>
-<body>
-    <div class="box">
-
-         <div class="bottom"></div>
-    </div>
+<body> 
+  <div class="container" style="height: 400px; width: 500px; background-color: aqua;"></div>
+  
 </body>
+ <script>
+  const throttleFunction=(func, delay)=>{
+  
+     let prev = 0;
+     return (...args) => {
+      
+       let now = new Date().getTime();
+   
+       console.log(now-prev, delay);
+
+       if(now - prev> delay){
+         prev = now;
+  
+         return func(...args); 
+       }
+     }
+   }
+   const container=document.querySelector(".container");
+     container.addEventListener("mousemove",throttleFunction((e)=>{
+      
+      const makediv=document.createElement("div");
+makediv.classList.add("makediv");
+      document.body.appendChild(makediv);
+      const makeimg=document.createElement("img");
+      makeimg.setAttribute("src","https://images.unsplash.com/photo-1694164108456-e21c7e575a73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80");
+      gsap.to(makeimg,{
+        y:"0",
+        ease:Power3,
+        duration:.2
+      })
+      gsap.to(makeimg,{
+        y:"100%",
+        ease:Power2,
+        delay:.3,
+        duration:.2
+      })
+      makediv.appendChild(makeimg);
+      makediv.style.left=e.clientX+"px"
+      makediv.style.top=e.clientY+"px"
+      setTimeout(()=>{
+         makediv.remove();
+      },700)
+     },500))
+ </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
 </html>
